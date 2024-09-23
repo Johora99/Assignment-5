@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Donate Bangladesh</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
      <!--======================= google font============================ -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,17 +50,11 @@
                 </div>
             </div>
         </div>
-        <div class="w-full">
-            <div class="container w-11/12 mx-auto flex flex-col lg:flex-row items-center justify-center gap-3 mt-10 md:mt-20 pb-10">
-                <button class="bg-lime py-3 px-8 text-charcoal text-xl font-semibold rounded-lg" id="donationBtn">Donation</button>
-                <button class="text-charcoal text-opacity-[0.7] text-xl font-medium py-3 px-8 border-[1px] border-charcoal border-opacity-[0.3] rounded-lg" id="historyBtn">History</button>
-            </div>
-        </div>
     
  </header>
  <main class="flex-grow">
     <section class="container w-11/12 mx-auto">
-        <h1 class="text-4xl font-bold text-charcoal mb-8 font-sans">Important FAQ</h1>
+        <h1 class="text-4xl font-bold text-charcoal my-10 font-sans">Important FAQ</h1>
         <div class="join join-vertical w-full mb-20">
           <div class="collapse collapse-arrow join-item border-base-300 border p-5">
             <input type="radio" name="my-accordion-4" checked="checked" />
@@ -97,7 +92,12 @@
 
     </div>
  </footer>
-
+<script>
+const homeBtn = document.getElementById('homeBtn');
+  homeBtn.addEventListener('click',function(){
+    window.location.href = '../index.html';
+})
+</script>
  <script src="./js/utilities.js"></script>
  <script src="./js/script.js"></script>
 </body>

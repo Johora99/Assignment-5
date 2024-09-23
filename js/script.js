@@ -60,11 +60,10 @@ donation('mainAmount', 'quotaDonation', 'quotaDonateAmount', 'quotaDonate', 'tit
 // ==============page change================================
 
 const blogBtn = document.getElementById('blogBtn');
-const homeBtn = document.getElementById('homeBtn');
 blogBtn.addEventListener('click',function(){
+    console.log(blogBtn);
     window.location.href = '../blog.html';
 })
-homeBtn.addEventListener('click',function(){
-    window.location.href = '../index.html';
-})
- 
+  
+
+
