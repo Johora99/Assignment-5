@@ -54,10 +54,10 @@
  </header>
  <main class="flex-grow">
     <section class="container w-11/12 mx-auto">
-        <h1 class="text-4xl font-bold text-charcoal my-10 font-sans">Important FAQ</h1>
+        <h1 class="text-4xl font-bold text-charcoal my-10 font-sans flex items-center gap-2">Important FAQ <img src="./assets/icons8-question-mark.gif" alt=""></h1>
         <div class="join join-vertical w-full mb-20">
           <div class="collapse collapse-arrow join-item border-base-300 border p-5">
-            <input type="radio" name="my-accordion-4" checked="checked" />
+            <input type="radio" name="my-accordion-4"/>
             <div class="collapse-title text-xl font-medium text-charcoal">What is the Document Object Model(DOM)?</div>
             <div class="collapse-content">
               <p class="text-charcoal text-opacity-[0.7] font-light">The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a document usually HTML as a tree of objects, allowing developers to interact with the content, structure, and styles of a web page</p>
@@ -92,13 +92,6 @@
 
     </div>
  </footer>
-<script>
-const homeBtn = document.getElementById('homeBtn');
-  homeBtn.addEventListener('click',function(){
-    window.location.href = '../index.html';
-})
-</script>
- <script src="./js/utilities.js"></script>
- <script src="./js/script.js"></script>
+<script src="./js/blog.js"></script>
 </body>
 </html>

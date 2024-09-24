@@ -7,12 +7,12 @@ function donation(id1, id2, id3, id4, id5){
  donate.addEventListener('click',function(){
     const mainAmount = parseFloat(mainAmountElement.innerText);
     const previousDonation = parseFloat(previousDonateElement.innerText);
-    const donationvalue = parseFloat(donateValue.value);
+    const donationvalue = Number(donateValue.value);
     if(mainAmount >= donationvalue && donationvalue > 0 && !isNaN(donationvalue)){
         const updatedAmount = mainAmount - donationvalue;
-        mainAmountElement.innerText = updatedAmount.toFixed(2);
+        mainAmountElement.innerText = parseFloat(updatedAmount).toFixed(2);
         const updateDonationAmount = previousDonation + donationvalue;
-        previousDonateElement.innerText = updateDonationAmount.toFixed(2);
+        previousDonateElement.innerText = parseFloat(updateDonationAmount).toFixed(2);
         const modal = document.getElementById('my_modal_1');
             if (modal) {
                 modal.showModal();
