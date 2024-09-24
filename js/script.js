@@ -7,9 +7,20 @@ const donationPart = document.getElementById('donationPart');
 // ========================== toggle start =======================
 donationBtn.addEventListener('click',function(){
     hiddenElement('donationPart');
+     donationBtn.classList.add('bg-lime','font-semibold');
+    donationBtn.classList.remove('text-opacity-[0.7]','font-medium','border-[1px]','border-charcoal','border-opacity-[0.3]');
+   historyBtn.classList.remove('bg-lime','font-semibold');
+    historyBtn.classList.add('text-opacity-[0.7]','font-medium','border-[1px]','border-charcoal','border-opacity-[0.3]');
+  
 })
 historyBtn.addEventListener('click',function(){
     hiddenElement('history');
+    historyBtn.classList.add('bg-lime','font-semibold');
+    historyBtn.classList.remove('text-opacity-[0.7]','font-medium','border-[1px]','border-charcoal','border-opacity-[0.3]');
+     donationBtn.classList.remove('bg-lime','font-semibold');
+    donationBtn.classList.add('text-opacity-[0.7]','font-medium','border-[1px]','border-charcoal','border-opacity-[0.3]')
+   
+   
 })
 
 
@@ -64,6 +75,6 @@ blogBtn.addEventListener('click',function(){
     console.log(blogBtn);
     window.location.href = '../blog.html';
 })
-  
 
+  
 
